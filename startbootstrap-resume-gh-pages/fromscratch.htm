@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ducks World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ducks Unleashed</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Ducks</a></li>
+                <li><a href="#videos">Duck Videos</a></li>
+                <li><a href="#graph">Duck Population Graph</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Ducks</h2>
+        <p>Ducks are fascinating creatures that inhabit various ecosystems...</p>
+        <ul>
+            <li>Mallard</li>
+            <li>Pekin Duck</li>
+            <li>Wood Duck</li>
+        </ul>
+        <img src="duckpics/duckling.jpg" alt="Duck Image"class="resized-image">
+    </section>
+
+    <section id="videos">
+        <h2>Duck Videos</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mQJ6q1ZCzsg" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="graph">
+        <h2>Duck Population Graph</h2>
+        <!-- Placeholder for Tableau graph -->
+        <div class='tableauPlaceholder' id='viz1702482529443' style='position: relative'>
+            <noscript>
+                <a href='https://eea.maps.arcgis.com/apps/MapSeries/index.html?appid=ec9a942228894562bd53310e3c3bc211'>
+                    <img alt='main page' src='https://public.tableau.com/static/images/te/test_20190116Urban_vulnerability_ideasFR_0/mainpage/1_rss.png' style='border: none' />
+                </a>
+            </noscript>
+            <object class='tableauViz' style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='test_20190116Urban_vulnerability_ideasFR_0/mainpage' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https://public.tableau.com/static/images/te/test_20190116Urban_vulnerability_ideasFR_0/mainpage/1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='language' value='en-US' />
+            </object>
+        </div>
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1702482529443');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            if (divElement.offsetWidth > 800) {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '600px';
+            } else if (divElement.offsetWidth > 500) {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '600px';
+            } else {
+                vizElement.style.width = '100%';
+                vizElement.style.height = '2000px';
+            }
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+    </section>
+     <!-- Add a link back to another webpage -->
+         <a href="http://127.0.0.1:5501/startbootstrap-resume-gh-pages/index.html#about">Visit MyResume.com</a>
+    <footer>
+        <p>&copy; 2023 Ducks Unleashed</p>
+    </footer>
+</body>
+</html>
